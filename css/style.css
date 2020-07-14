@@ -97,3 +97,53 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+@media all and (min-width: 700px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .article {
+    display: flex;
+    margin: 0 5% 50px 5%;
+    height: 270px;
+  }
+  .article__image-block {
+    width: 30px;
+    flex: 1.5;
+    overflow: hidden;
+  }
+  .article__image {
+    border-radius: 10px 0 0 10px;
+    width: 330px;
+    object-fit: cover;
+    height: 270px;
+  }
+  .article__content {
+    padding: 20px 40px;
+    flex: 2;
+  }
+  .article__title {
+    font-size: 20px;
+  }
+  .article__attribution {
+    margin-top: 25px;
+  }
+}
+@media all and (min-width: 786px) {
+  .article {
+    margin: 0 10% 50px 10%;
+  }
+}
+@media all and (min-width: 1060px) {
+  .article {
+    margin: 0 20% 50px 20%;
+  }
+}
+@media all and (min-width: 1440px) {
+  .article {
+    margin: 0 365px 50px 365px;
+  }
+}
