@@ -63,6 +63,12 @@ body {
   cursor: pointer;
   z-index: 2;
 }
+.article__share-button.open {
+  background: hsl(214, 17%, 51%);
+}
+.article__share-button svg path.open {
+  fill: #ffffff;
+}
 /* Social Links */
 .social-links {
   background: hsl(217, 19%, 35%);
@@ -91,6 +97,9 @@ body {
 }
 .social-links__link {
   margin: 0 8px;
+}
+.social-links__link:focus {
+  outline: 2px dotted rgb(2, 233, 137);
 }
 /* Attribution Section */
 .attribution {
@@ -174,5 +183,13 @@ body {
 @media all and (min-width: 1400px) {
   .article {
     margin: 0 365px 50px 365px;
+  }
+}
+@media all and (min-width: 1530px) {
+  .article__attribution {
+    margin-top: 50px;
+  }
+  .social-links {
+    top: 100px;
   }
 }
