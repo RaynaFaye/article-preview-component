@@ -25,7 +25,7 @@
           <img src="images/avatar-michelle.jpg" alt="" class="article__author__image" />
           <p class="article__author">Michelle Appleton</p>
           <p class="article__date">28 Jun 2020</p>
-          <button class="article__share-button" aria-label="Share">
+          <button class="article__share-button" aria-controls="social-links" aria-expanded="false" aria-label="Click to share on our social media">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
               <path
                 fill="#6E8098"
@@ -35,17 +35,17 @@
           </button>
         </div>
       </div>
-      <div class="social-links hidden">
-        <p class="social-links__text">Share</p>
+      <div class="social-links hidden" id="social-links">
+        <p class="social-links__text" aria-hidden="true">Share</p>
         <ul class="social-links__list">
           <li>
-            <a href="" class="social-links__link"><img src="images/icon-facebook.svg" alt="on facebook" /></a>
+            <a href="" class="social-links__link"><img src="images/icon-facebook.svg" alt="Share our facebook." /></a>
           </li>
           <li>
-            <a href="" class="social-links__link"><img src="images/icon-twitter.svg" alt="on our twitter" /></a>
+            <a href="" class="social-links__link"><img src="images/icon-twitter.svg" alt="Share our twitter." /></a>
           </li>
           <li>
-            <a href="" class="social-links__link"><img src="images/icon-pinterest.svg" alt="on icon-pinterest" /></a>
+            <a href="" class="social-links__link"><img src="images/icon-pinterest.svg" alt="Share our pinterest." /></a>
           </li>
         </ul>
         <div class="arrow-down"></div>

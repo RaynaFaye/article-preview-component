@@ -7,6 +7,11 @@ shareButton.addEventListener('click', () => {
   socialLinksBlock.classList.toggle('hidden');
   shareButton.classList.toggle('open');
   shareArrow.classList.toggle('open');
+  if (shareButton.attributes['aria-expanded'].nodeValue === 'false') {
+    shareButton.attributes['aria-expanded'].nodeValue = 'true';
+  } else {
+    shareButton.attributes['aria-expanded'].nodeValue = 'false';
+  }
 });
 
 socialLinks.forEach((link) => {
